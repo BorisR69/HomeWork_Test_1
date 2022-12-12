@@ -10,29 +10,26 @@ class CalculatorTest {
         int result = calc.plus.apply(x, y);
 
         Assertions.assertEquals(6, result);
-        Assertions.assertNotEquals(4, result);
     }
 
     @Test
     public void minus() {
         Calculator calc = new Calculator();
-        int x = 4;
-        int y = 2;
+        int x = 8;
+        int y = 4;
         int result = calc.minus.apply(x, y);
 
-        Assertions.assertEquals(2, result);
-        Assertions.assertNotEquals(4, result);
+        Assertions.assertEquals(4, result);
     }
 
     @Test
     public void devide() {
         Calculator calc = new Calculator();
-        int x = 4;
+        int x = 2;
         int y = 2;
         int result = calc.devide.apply(x, y);
 
-        Assertions.assertEquals(2, result);
-        Assertions.assertNotEquals(4, result);
+        Assertions.assertEquals(1, result);
     }
 
     @Test
